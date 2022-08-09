@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?> 
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+width="32" height="32" viewBox="0 0 32 32">
+	<defs>
+		<pattern id="chess" viewBox="0 0 2 2" width="25%" height="25%">
+			<rect fill="#66058C"  x="1" y="0" width="1" height="1"/>
+			<rect fill="#D0C13A"  x="1" y="1" width="1" height="1"/>
+			<rect fill="#FFC944"  x="0" y="0" width="1" height="1"/>
+			<rect fill="#7A092B"  x="0" y="1" width="1" height="1"/>
+		</pattern>
+	</defs>
+<rect fill="url(#chess)"  stroke="#fff" stroke-width="0" x="4" y="4" width="24" height="24"/>
+	</svg>

@@ -1,0 +1,392 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "IT";
+    ViewData["Name"] = "IT";
+}
+
+    <div class="main__header">
+        <h1 class="main__header-text">IT</h1>
+        <div class="main__details">Programming, except web-programming</div>
+    </div>
+
+    <section class="theme" id="general">
+        <h2 class="theme__header">Meta</h2>
+        
+        <div class="theme__item"><a class="theme__link" href="https://www.smashingmagazine.com/articles/">Smashing magazine - programming articles collection</a></div>
+        <div class="theme__item">
+            MAIN: <a class="theme__link" href="https://matt.might.net/articles/what-cs-majors-should-know/">What CS majors should know</a>
+        </div>
+        <section class="theme__section" id="Freecodecamp">
+            <h3 class="theme__subheader">Freecodecamp..</h3>
+            <div class="theme__item">
+                <a class="theme__link" href="https://www.youtube.com/c/Freecodecamp/videos">Freecodecamp videos</a>
+            </div>
+            <div class="theme__item">
+                <a class="theme__link" href="https://www.freecodecamp.org/learn/">Freecodecamp</a>
+            </div>
+            <div class="theme__item">
+                <a class="theme__link" href="https://forum.freecodecamp.org/">Forum Freecodecamp</a>
+            </div>
+        </section>
+
+        <section class="theme__section" id="reddit faqs">
+            <h3 class="theme__subheader">Reddit FAQs</h3>
+            <div class="theme__item">
+                <a class="theme__link" href="https://www.reddit.com/r/learnprogramming/wiki/faq">r/learnprogramming faq</a> - mostly links therein
+            </div>
+            <div class="theme__item">
+                <a class="theme__link" href="https://github.com/Michael0x2a/curated-programming-resources/blob/master/resources.md#html-css-and-javascript">From reddit - curated-programming-resources html-css-js</a>
+            </div>
+            <div class="theme__item">
+                <a class="theme__link" href="https://www.reddit.com/r/webdev/wiki/faq">Reddit webdev FAQ</a>
+            </div>
+            <div class="theme__item">
+                <a class="theme__link" href="https://www.reddit.com/r/learnprogramming/comments/3r7lhp/a_collection_of_150_what_are_the_best_dev/">150+ what are the best dev questions</a>
+            </div>
+        </section>
+
+        <div class="theme__item">
+            <a class="theme__link" href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Github md syntax</a>
+        </div>
+        <div class="theme__item">
+            <a class="theme__link" href="https://www.youtube.com/watch?v=AWaL_1V9dEY">Frontend programming ideas advanced crash-course</a>
+        </div>
+        <div class="theme__item">
+            <a class="theme__link" href="https://www.kavitareader.com/">Kavita reader</a> 
+        </div>
+        <div class="theme__item">
+            <a class="theme__link" href="https://leetcode.com/">Leetcode</a>
+        </div>
+    </section>
+
+    <section class="theme" id="python">
+        <h2 class="theme__header">Python</h2>
+        <section class="theme__section" id="python-technical">
+            <h3 class="theme__subheader">Optimization, advanced details</h3>
+            <div class="theme__item">
+                <a class="theme__link" href="https://www.youtube.com/watch?v=0ewD6JkmZ0M">Fix these 12 mistakes</a>
+            </div>						 
+            <div class="theme__item"><a href="https://www.youtube.com/channel/UC2-j4-hV33hboyK1FtukJ9w/videos">Cunning Python - YouTube Channel</a></div>
+            <div class="theme__item"><a href="https://www.youtube.com/watch?v=D0vbuIDOV4c">Memory and python - everything you should know</a>
+                <ul class="list-multilevel">
+                    <li class="list-multilevel__item">Objgraph - find it!</li>
+                    <li class="list-multilevel__item"><i>pympler: asizeof - deep-size, tracker, classtracker; muppy, summary</i></li>
+                    <li class="list-multilevel__item">python -m <i>memory_profiler</i> *.py; mprof</li>
+                    <li class="list-multilevel__item"><i>struct</i> binary representation &lt;-&gt; python objects .pack("llll",...),.unpack("llll",...)
+                        For long storage - bytearray - less memory (significantly)
+                    </li>
+                    <li class="list-multilevel__item">Lines spacing - not always work.... a="a"*30</li>
+                </ul>
+            </div>
+            <div class="theme__item"><a href="https://www.youtube.com/watch?v=77B2-Pk1fls">What to do if python code is slow</a>
+                <ul class="list-multilevel">
+                    <li class="list-multilevel__item">
+                        cythonize , pypy
+                    </li>
+                    <li class="list-multilevel__item">numba</li>
+                </ul>			
+            </div>
+
+            <div class="theme__item"><a class="theme__link" href="https://proglib.io/p/konfiguracionnye-fayly-kak-instrument-upravleniya-prilozheniyami-na-python-2021-06-11">Configuration files to manage python apps</a>
+            </div>
+            <div class="theme__item"><a href="https://code.activestate.com/recipes/577720-how-to-use-super-effectively/">working with super()</a></div>
+        </section>
+
+        <section class="theme__section" id="python-official-docs">
+            <h3 class="theme__subheader">Official docs</h3>
+            <div class="theme__item"> <a href="https://docs.python.org/release/3.10.4/index.html">3.10.4 docs</a> </div>
+            <div class="theme__item"> <a href="https://docs.python.org/release/3.10.4/library/index.html">3.10.4 Library</a>
+                <ul class="list-multilevel">
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/text.html">Text processing services</a>: 
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem">
+                                <a href="https://docs.python.org/release/3.10.4/library/string.html"><i>string</i></a>
+                                <ul class="list-multilevel__sub-sublist">
+                                    <li class="list-multilevel__sub-subitem">Constants - types of chars</li>
+                                    <li class="list-multilevel__sub-subitem"><span class="list-multilevel__class">Formatter</span> and formatting strings</li>
+                                    <li class="list-multilevel__sub-subitem"><span class="list-multilevel__class">Template</span> - simpler substitutions</li>
+                                    <li class="list-multilevel__sub-subitem">string.capwords</li>
+                                </ul>
+                            </li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/re.html"><i>re</i></a>
+                                <ul class="list-multilevel__sub-sublist">
+                                    <li class="list-multilevel__sub-subitem">Regex syntax</li>
+                                    <li class="list-multilevel__sub-subitem">re.compile and similar and constants</li>
+                                    <li class="list-multilevel__sub-subitem">Pattern.search, Pattern.match etc.</li>
+                                    <li class="list-multilevel__sub-subitem">Match objects</li>
+                                    <li class="list-multilevel__sub-subitem">examples</li>
+                                </ul>
+                            </li>
+                            <li class="list-multilevel__subitem">
+                                <a href="https://docs.python.org/release/3.10.4/library/difflib.html"><i>difflib</i></a>
+                                Compare sequences, including files. For comparing dirs and files see also <i>filecmp</i>
+                                <ul class="list-multilevel__sub-sublist">
+                                    <li class="list-multilevel__sub-subitem"><span class="list-multilevel__class">SequenceMatcher</span></li>
+                                    <li class="list-multilevel__sub-subitem"><span class="list-multilevel__class">Differ</span></li>
+                                    <li class="list-multilevel__sub-subitem"><span class="list-multilevel__class">HtmlDiff</span></li>
+                                    <li class="list-multilevel__sub-subitem">functions</li>
+                                    <li class="list-multilevel__sub-subitem">command-line interface</li>
+                                </ul>
+                            </li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/textwrap.html"><i>textwrap</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/unicodedata.html"><i>unicodedata</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/readline.html"><i>readline</i></a>, ...</li>
+                        </ul>
+                    </li>
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/binary.html">Binary data services</a>: codecs, struct</li>
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/datatypes.html">Data types</a>: Modules for datetime, collections; weakref, types, enum, graphlib
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/datetime.html"><i>datetime</i></a>: <span class="list-multilevel__class">date, time, datetime, timedelta, tzinfo, timezone</span>
+                                <p class="list-multilevel__para">date, datetime, and time objects all support a strftime(format) method, to create a string representing the time under the control of an explicit format string.; date.today()</p>
+                                <p class="list-multilevel__para">%a %A weekday name; %d day; %b %B month name; %m month; %y %Y year; %H %M %S %f hour min sec microsec; %z %Z tz; </p>
+
+                            </li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/collections.html"><i>collections</i></a>(<span class="list-multilevel__class">deque, namedtuple, OrderedDict</span>)</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/bisect.html"><i>bisect</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/array.html"><i>array</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/pprint.html"><i>pprint</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/heapq.html"><i>heapq</i></a> - kind of binary tree sort</li>
+
+                        </ul>
+
+                    </li>
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/numeric.html">Numeric, math and statistics</a>
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/numbers.html"><i>numbers</i></a>: basic numbers class (<span class="list-multilevel__class">Integer, Number, Complex</span> etc.), math, cmath</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/decimal.html"><i>decimal</i></a>
+                                <ul class="list-multilevel__sub-sublist">
+                                    <li class="list-multilevel__sub-subitem">getcontext().prec - установить точность</li>
+                                </ul>
+                            </li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/fractions.html"><i>fractions</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/random.html"><i>random</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/statistics.html"><i>statistics</i></a> (means, deviations*4, NormalDist)</li>
+                        </ul>
+                    </li>
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/functional.html">Functional programming</a>: itertools, functools, operator
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/itertools.html"><i>itertools</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/functools.html"><i>functools</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/operator.html"><i>operator</i></a> - полезен для ускорения процесса</li>
+                        </ul>
+
+                    </li>
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/filesys.html">Files</a>: os.path, glob, stat, etc.
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/pathlib.html"><i>pathlib</i></a>  </li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/os.path.html"><i>os.path</i></a> ... </li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/fileinput.html"><i>fileinput</i></a> - iterate over file lines </li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/stat.html"><i>stat</i></a> - constants to interpet stat results</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/filecmp.html"><i>filecmp</i></a> - compare files</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/glob.html"><i>glob</i></a> - glob.glob(pathname,*,root_dir=None,dir_fd=..,recursive=..) match fn w/*?[]. Via os.scandir,fnmatch.fnmatch</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/fnmatch.html"><i>fnmatch</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/shutil.html"><i>shutil</i></a> - highlevel file op-s: copy, move</li>
+                        </ul>
+
+                    </li>
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/persistence.html">Data persistence: <i>dbm, pickle, shelve, sqlite3</i></a></li>
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/archiving.html">Data compression: <i>gzip,bz2,lzma,zipfile,tarfile</i></a> </li>
+                    <li class="list-multilevel__item">File formats: <i>csv, configparser</i></li>
+                    <li class="list-multilevel__item">Crypto</li>
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/allos.html">Generic</a>: <i>os, io</i> - for streams, <i>time</i> - access and conversions, <i>argparse, logging, curses</i> - for terminals, <i>platform, errno</i>, ...
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem">
+                                <a href="https://docs.python.org/release/3.10.4/library/os.html"><i>os</i></a>
+                                <ul class="list-multilevel__sub-sublist">
+                                    <li class="list-multilevel__sub-subitem">Administrative tools</li>
+                                    <li class="list-multilevel__sub-subitem">Process parameters; Environment tools</li>
+                                    <li class="list-multilevel__sub-subitem">File descriptor tools</li>
+                                    <li class="list-multilevel__sub-subitem">File and directories - pathname tools</li>
+                                    <li class="list-multilevel__sub-subitem">Process management and control; Shell commands</li>
+                                    <li class="list-multilevel__sub-subitem">Miscelanneous: Portability constants</li>
+                                    <li class="list-multilevel__sub-subitem"><i>os.path</i></li>
+                                </ul>
+                            </li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/io.html"><i>io</i></a> - for streams</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/time.html"><i>time</i></a> - time related fns</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/argparse.html"><i>argparse</i></a>: 
+                                <ul class="list-multilevel__sub-sublist"> 
+                                    <li class="list-multilevel__sub-subitem"> cl: <span class="list-multilevel__class">ArgumentParser</span>, ctor args:
+                                        <ul>
+                                            <li>usage, prefix_chars, fromfile_prefix_chars, </li>
+                                            <li>allow_abbrev, def:True</li>
+                                            <li>exit_on_error, def:True</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-multilevel__sub-subitem"> ArgumentParser: .add_argument(), </li>
+                                    <li class="list-multilevel__sub-subitem"> .parse_args() </li>
+                                </ul>
+                            </li>
+                            <li class="list-multilevel__subitem"><i>getopt</i> - c-style arg parser</li>
+                            <li class="list-multilevel__subitem"><i>logging</i></li>
+                        </ul>
+
+                    </li>
+                    <li class="list-multilevel__item"><a href="https://docs.python.org/release/3.10.4/library/concurrency.html">Concurrent</a>: <i>subprocess, threading, queue</i>, ...
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><i>_thread</i>: low-level .start_new_thread() cl:LockType</li>
+                            <li class="list-multilevel__subitem"><i>threading</i>:
+                                <ul class="list-multilevel__sub-sublist">
+                                    <li class="list-multilevel__sub-subitem"><span class="list-multilevel__class">Thread, Lock, RLock</span></li>
+                                </ul>
+                            </li>
+                            <li class="list-multilevel__subitem"><i>multiprocessing</i>:
+                                <ul class="list-multilevel__sub-sublist">
+                                    <li class="list-multilevel__sub-subitem"><span class="list-multilevel__class">Process</span></li>
+                                </ul>
+                                
+                            </li>
+                            <li class="list-multilevel__subitem"><i>concurrent: concurrent.futures:</i> </li>
+                        </ul>
+
+                    </li>
+                    <li class="list-multilevel__item">Networking and IPC: asyncio, socket - low-lvl netw, ssl - wrappers for sockets,select - wait for io completion,...
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/asyncio.html"><i>asyncio</i></a>:
+                                <ul class="list-multilevel__sub-sublist">
+                                    <li class="list-multilevel__sub-subitem"><a href="https://docs.python.org/release/3.10.4/library/asyncio-task.html#coroutine">Coroutines and tasks</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/socket.html"><i>socket</i></a> - low-level socket interface</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/ssl.html"><i>ssl</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/select.html"><i>select</i></a> - interface for select(), poll(), devpoll(), epoll(), kqueue() (different OS). Activity for sockets (all OS) and files (except Windows)</li>
+                            <li class="list-multilevel__subitem">...</li>
+                        </ul>
+
+                    </li>
+                    <li class="list-multilevel__item">Internet data:<i>email, json, mailcap, mailbox, mimetypes, base64,...,uu</i> - uuencode (enc-dec)
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/email.html"><i>email</i></a>: emails, MIME</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/json.html"><i>json</i></a> Cp.<i>marshal, pickle</i>
+                                <ul class="list-multilevel__sub-sublist">
+                                    <li class="list-multilevel__sub-subitem">.dump(...) - to fp, .dumps(...) - to str</li>
+                                    <li class="list-multilevel__sub-subitem">.load(...)/.loads(...)</li>
+                                    <li class="list-multilevel__sub-subitem"><span class="list-multilevel__class">JSONDecoder, JSONEncoder</span></li>
+                                </ul>
+
+                            </li>
+                            <li class="list-multilevel__subitem">...</li>
+                            <li class="list-multilevel__subitem"><i>uu, base64, mimetypes, ...</i>: decode-encode various data, transmitted as text</li>
+                        </ul>
+
+                    </li>
+                    <li class="list-multilevel__item"><i>html</i> and xml
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><i>html</i>: escape, unescape, <i>html.parser: html.entities:</i>	</li>
+                        </ul>
+                    </li>
+                    <li class="list-multilevel__item">Internet protocols
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem">cgi:</li>
+                        </ul>
+
+                    </li>
+                    <li class="list-multilevel__item">Multimedia
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/audioop.html"><i>audioop</i></a> - raw audio...</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/colorsys.html"><i>colorsys</i></a>- conversion between color systems</li>
+                            <li class="list-multilevel__subitem">various other multimedia formats: images and sounds</li>
+                        </ul>
+                    </li>
+                    <li class="list-multilevel__item">Internationalization
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/gettext.html"><i>gettext</i></a> i18n l10n services</li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/locale.html"><i>locale</i></a> - POSIX locale...</li>
+                        </ul>
+
+                    </li>
+                   <li class="list-multilevel__item">Devtools
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/unittest.html"><i>unittest</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/test.html"><i>test</i></a></li>
+                            <li class="list-multilevel__subitem">...</li>
+                        </ul>
+
+                    </li>
+                    <li class="list-multilevel__item">Runtime services: sys, __future__, __main__, builtins, warnings, abc, gc, site, ...
+                        <ul class="list-multilevel__sublist">
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/sys.html"><i>sys</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/builtins.html"><i>builtins</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/__main__.html"><i>__main__</i></a></li>
+                            <li class="list-multilevel__subitem"><a href="https://docs.python.org/release/3.10.4/library/warnings.html"><i>warnings</i></a></li>
+
+                            <li class="list-multilevel__subitem">...</li>
+                        </ul>
+                    </li>                    
+                </ul>
+
+            </div>
+        </section>        
+
+        <section class="theme__section" id="python-web-scraping">
+            <h3 class="theme__subheader">Web scraping</h3>
+            <div class="theme__item"><a class="theme__link" href="https://habr.com/ru/company/vdsina/blog/566446/">4 проекта - Хабр</a></div>
+        </section>
+
+        <section class="theme__section" id="python-miscellaneous">
+            <h3 class="theme__subheader">Miscelanneous</h3>
+            <div class="theme__item">
+                <a class="theme__link" href="https://stackoverflow.com/questions/19805654/python-try-finally-block-returns">Finally overrides return</a> - always works on return and override it
+            </div>
+            <div class="theme__item"><a class="theme__link" href="https://tkdocs.com/book.html">tkinter</a>, <a class="theme__link" href="https://tkdocs.com/">Home</a></div>
+
+            <div class="theme__item"><a class="theme__link" href="https://tproger.ru/articles/stek-tehnologij-dlja-python-sovetuet-jespert/">Стек технологий на Питоне</a>
+                <ul class="list-multilevel">
+                    <li class="list-multilevel__item">Virtual environment (venv)
+                        <p class="list-multilevel__para">Модуль venv обеспечивает поддержку для создания облегчённых «виртуальных сред» с собственными каталогами сайтов, которые могут быть изолированы от системных каталогов сайтов. </p>
+                    </li>
+                    <li class="list-multilevel__item"> PEP8 и autopep8 </li>
+                    <li class="list-multilevel__item"> Flake8 
+                        <p class="list-multilevel__para">Популярный линтер для проверки кода.</p>
+                    </li>
+                    <li class="list-multilevel__item">Bandit
+                        <p class="list-multilevel__para">Инструмент, предназначенный для поиска распространённых проблем безопасности в коде Python.</p>
+                    </li>
+                    <li class="list-multilevel__item">REPL Python (Ipython, bpython, ptpython)
+                        <p class="list-multilevel__para">Интерактивный шелл (консоль), позволяет писать код построчно.</p>
+                    </li>
+                    <li class="list-multilevel__item">Typing
+                        <p class="list-multilevel__para">Библиотека типизации, хоть и среда выполнения Python не применяет аннотации типов функций и переменных. </p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="theme__item">
+                <a class="theme__link" href="https://stackoverflow.com/questions/1335507/keyboard-input-with-timeout">How would you prompt the user for some input but timing out after N seconds?</a> - 
+                <code class="theme__code">
+    # not for windows. Select is available, 
+    # but on windows the input to select 
+    # can only be a socket - sys.stdin and 
+    # file descriptors are unix.
+    #
+    # If you intend to read from standard input 
+    # again after this call, it's a good idea to do 
+    # termios.tcflush(sys.stdin, termios.TCIFLUSH)....
+
+    import sys, select 
+
+    print "You have ten seconds to answer!"
+
+    i, o, e = select.select( [sys.stdin], [], [], 10 )
+
+    if (i):
+        print "You said", sys.stdin.readline().strip()
+    else:
+        print "You said nothing!"</code>
+                <p class="theme__para">, or <a class="theme__link" href="https://github.com/johejo/inputimeout">inputimeout module</a> or</p>
+                <code class="theme__code">      # what worked for my situation was 
+    # just running the Bash "read -t" command 
+    # in a subprocess.
+    # 
+    # Brutal disgusting hack, I know,
+    #  but I feel guilty enough about
+    # how well it worked that I wanted to share it with everyone here.
+
+    import subprocess
+    subprocess.call('read -t 30', shell=True)</code>
+                <p class="theme__para">Related: <a class="theme__link" href="https://gist.github.com/michelbl/efda48b19d3e587685e3441a74457024">kbhit.py</a></p>
+            </div>
+        </section>
+    </section>
+

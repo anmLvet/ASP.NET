@@ -1,0 +1,254 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin: 0 0 40px;  
+}
+
+.nav__container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px #8b0000 solid;
+}
+
+.nav__main-part {
+  display: flex;
+  flex-direction: column;  
+}
+
+.nav__logo {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav__image {
+  padding: 10px;
+  max-width: 50%;
+  margin: auto;  
+}
+
+
+.nav-menu {
+  padding: 5px;
+  margin: 0;
+  border-bottom: 1px lightgray solid;
+}
+
+.nav-menu__item {
+ 
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 5px 10px 5px;
+  border-top: 1px lightgray solid;
+}
+
+.nav-menu__item_current {
+  background-position: bottom;
+  background-size: 2px 5px;
+  background-repeat: repeat-x;
+  background-image: url("/img/tab_bg.svg"); 
+  background-color: #eee;  
+}
+
+.main__header {
+   font-size: 3rem; 
+   margin: 0.8rem 0.8rem 1rem; 
+   font-family: 'Roboto Condensed',sans-serif;
+}
+
+.main__header-text { 
+  font-size: 3rem;
+  font-weight: bold;
+  color: blue;
+  margin: 0; 
+}
+
+.main__details { 
+  font-size: 2rem; 
+  font-style: italic;
+}
+
+.theme {
+  margin: 0.2rem 1.2rem 1.7rem;
+  font-family: 'Roboto Condensed',sans-serif;
+}
+
+.theme__header { 
+  font-size:2.4rem; 
+  color: green; 
+  margin: 0 0 0.85rem;
+}
+
+.theme__section { 
+  margin: 1.3rem 1.8rem; 
+}
+
+.theme__subheader 
+{
+   font-size: 1.8rem;
+   margin: 0 0 0.7rem;
+    
+}
+
+.theme__3rdheader 
+{
+   font-size: 1.3rem; 
+}
+
+.theme__item { 
+  font-size: 1.2rem;
+  padding-bottom: 3px;
+  margin: 0;
+  border-right: 20px white solid;
+  position: relative;
+}
+
+.theme__item:before {
+  content : "";
+  position: absolute;
+  left    : 5px;
+  bottom  : 0;
+  height  : 1px;
+  width   : 99%; 
+ 
+  border-bottom:3px solid #ccc;
+}
+
+.theme__item_important { font-size: 1.2rem; }
+
+
+.theme__code { 
+  white-space: pre-wrap; 
+  font-size: 1rem;
+}
+
+.theme__para {
+  margin: 0;
+}
+
+.list-multilevel { 
+  counter-reset:section;
+  list-style-type:none; 
+  margin: 0.6rem 0 0.8rem;
+  padding-left: 1.4rem;
+}
+.list-multilevel_aside { font-style: italic; }
+.list-multilevel__item { list-style-type:none; }
+
+.list-multilevel__para {
+  margin: 0.15rem 3rem;
+}
+
+.list-multilevel__subitem { list-style-type:none; }
+.list-multilevel__sub-subitem { list-style-type:none; }
+.list-multilevel__sublist { counter-reset:subsection; }
+.list-multilevel__sub-sublist { counter-reset:subsubsection; }
+.list-multilevel__item:before{
+    counter-increment:section;
+    content:counter(section) ". ";
+}
+.list-multilevel__subitem:before {
+    counter-increment:subsection;
+    content:counter(section) "." counter(subsection) " ";
+}
+
+.list-multilevel__sub-subitem:before {
+    counter-increment:subsubsection;
+    content:counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+}
+
+.list-multilevel__class {
+    color: red;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 40px; 
+}
+
+@media (max-width: 450px) {
+  .nav__image {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    margin: 0 20px 60px;
+  }
+
+  .footer {
+    line-height: 60px;
+  }
+
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 3px #8b0000 solid;
+  }
+  
+  .nav__main-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav__logo {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .nav__image {
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    margin-right: 0;  
+  }
+  
+  
+  .nav-menu {
+    padding: 5px;
+    margin: 0;
+    position: relative;
+    bottom: 3.2px;  
+    
+  }
+  
+  .nav-menu__item {
+    display: inline;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 5px 10px 5px;
+  }
+  
+  .nav-menu__item_current {
+    border-top: 6px #850000 solid;
+    border-right: 9px #850000 solid;
+    border-left: 9px #850000 solid;
+    border-bottom: 9px canvas solid;
+    border-image: url("/img/tab_border.svg") 6 9 9;  
+    background: none;  
+  }
+
+
+}

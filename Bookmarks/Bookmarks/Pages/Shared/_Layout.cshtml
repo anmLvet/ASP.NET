@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" href="~/img/favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container"> 
+                <div class="nav__main-part">
+                    <div class="nav__logo">Bookmarks</div>
+                    <ul class="nav__menu nav-menu">
+                        
+                    @{
+                        List<MenuItem> menuItems = new ((IList<MenuItem>)ViewData["MenuItems"]);
+                        
+
+                        @Html.Raw("<!-- ")
+                        foreach (MenuItem menuItem in menuItems)
+                        {
+                            if (menuItem.Label == ViewData["Name"].ToString())
+                            {
+                                @Html.Raw("-->")<li class="nav-menu__item nav-menu__item_current">@menuItem.Name</li>@Html.Raw("<!-- ")
+                            }
+                            else
+                            {
+                            @Html.Raw("-->")<li class="nav-menu__item"><a class="nav-menu__link" href="@menuItem.Link">@menuItem.Name</a></li>@Html.Raw("<!-- ")
+                            }
+                        }
+                        @Html.Raw("-->")
+                    }  
+                        
+                    
+                    </ul>                       
+                </div>      
+                <img src="/img/lion-drinks-water.jpg" class="nav__image" alt="Lion drinks water"
+                    srcset="/img/lion-drinks-water-300.jpg 300w,
+                            /img/lion-drinks-water-450.jpg 450w"
+                    sizes="(max-width: 450px) 90vw,
+                            (max-width: 900px) 50vw,
+                            300px"  
+                />
+            </div>
+        </nav>
+        
+        
+    </header>
+    <main role="main" class="main">
+        @RenderBody()
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footer__container">
+            2022 - Bookmarks (AnmLvet)
+        </div>
+    </footer>
+
+@*     <script src="~/lib/jquery/dist/jquery.min.js"></script>    
+    <script src="~/js/site.js"></script> *@
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
