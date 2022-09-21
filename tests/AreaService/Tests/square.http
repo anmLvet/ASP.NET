@@ -1,0 +1,8 @@
+POST https://localhost:5001/area HTTP/1.1
+Content-Type: application/json
+Content-Length: 56
+
+{
+"TheShapeType": "Triangle",
+"Sides": [ "4","3","9" ]
+}
